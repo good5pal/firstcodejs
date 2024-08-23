@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break & Continue</title>
+    
+</head>
+<body>
+<script type="text/javascript">
+    // 33
+    
+    // breack stop loop
+    // work in loop
+    // continuk skip only write condition
+    // continue work continue
+
+    // output 1 to 10
+    for(let counter = 1; counter<=10; counter++){
+        document.write(counter,"<br>");
+    }
+    // output no
+    for(let counters = 11; counters<=10; counters++){
+        document.write(counters,"<br>");
+    }
+    document.write("<hr>", "no continue ","<hr>");
+// continue
+    for(let counters1 = 1; counters1 <= 10; counters1++){
+        if(counters1 == 5){
+            continue; // here skip 5 and continue
+            // only skip continue 5
+        }
+        document.write(counters1,"<br>");
+    }
+    document.write("skip 5 and continue","<hr>")
+
+// break
+for(let counters2 = 1; counters2 <= 10; counters2++){
+        if(counters2 == 5){
+            break; // here skip 5 and all
+        }
+        document.write(counters2,"<br>");
+    }
+    document.write("skip 5 and all skip","<hr>")
+
+</script>
+</body>
+</html>

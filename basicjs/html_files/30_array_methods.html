@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // 35
+    let software = ["aaaaa"," bbbbb"," ccccc", " ddddddd"];
+        software.push('eeeeee'); // add in last
+        console.log(software);
+        software.unshift('fffffff'); // add in first
+        console.log(software);
+        // show in console
+        console.log(software[1]); // index number
+        console.log(software.length); // show value
+        software.pop(); // last is remove 
+        software.shift(); // first is remove
+        software.splice(1,1); // remove from index number
+        
+        // all array remove 2 method
+        // 1
+        //software = [ ]; // or
+        // 2
+        //software.length = 0;
+
+        console.log(software);
+
+        let position = 
+        software.indexOf('aaaaa');
+        console.log(position);
+
+        let text =  "i love javascript.";
+        let wordarray = text.split(' ');
+        console.log(wordarray);
+        console.log(wordarray[2]); // show index word
+
+        let software1 = ["ggggg","nnnnnn","sssss", "kkkkk"]; // use join array join
+        let textarray = software1.join('-');
+        console.log(textarray);
+
+        let software2 = ["lllll","ppppp","qqqqq", "ttttt"];
+
+        let newsoftware = software.concat(software1,software2);
+        console.log(newsoftware); // concate multi array
+
+        // multi dimention array [[[]]]
+        let soft1 = [
+            ['apple',' banana'],
+            ['potato',' tomato'],
+            ['red',' blue']
+        ];
+        console.log(soft1); // (3) [Array(2), Array(2), Array(2)]
+        console.log(soft1[1][0]); // output potato
+
+    </script>
+</body>
+</html>

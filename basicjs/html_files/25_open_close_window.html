@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The window object</h1>
+<h2>The open() and close() methods</h2>
+<button onclick="openwin()">open "mywindow"</button>
+<button onclick="closewin()">close "mywindow"</button>
+
+<script>
+let mywindow;
+
+function openwin() {
+    mywindow = window.open("", "", "width=200","heigh=100");
+}
+
+function closewin() {
+    mywindow.close();
+}
+
+</script>
+</body>
+</html>

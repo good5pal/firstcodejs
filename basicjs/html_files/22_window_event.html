@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick = "openwindow()">open window</button>
+    <button onclick = "closewindow()">close window</button>
+<script type="text/javascript">
+    // 28
+    // window event : .open, .close
+    let mywindow;  // dont use var
+    function openwindow() {
+            mywindow = window.open("http://google.com","","width=200px,height = 200px,left = 200px,top =200px");
+        }// open new window in browser  
+        // with _parent we open in same tab new window
+        // _blank == by default new window open
+    function closewindow() {
+            mywindow.close();
+        }
+        
+</script>
+</body>
+</html>

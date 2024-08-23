@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global & local variables</title>
+    <script>
+        // 25
+    // local variable create in function
+    //======
+    /* function abc(){
+        var b = "ram";
+    };  / var b is local variable
+    */
+    //======
+
+    // variable create outside of function is global variable
+    //======
+    /*
+    var a = "shyam";
+    function sss(){
+        var b = "raja";
+    };
+    */  // var a is global variable
+    //======
+// =============================
+
+    // this is global variable
+    var a = "Heena Patel";
+    document.write(a);
+    document.write("<br><hr>")
+
+// ================================
+// function create than create local var
+// we call anywhere global variable
+        function abc(){
+            var b = "Reena Patel";
+            document.write(b,"<br>");
+            document.write(a); // call global variable
+        };
+        abc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

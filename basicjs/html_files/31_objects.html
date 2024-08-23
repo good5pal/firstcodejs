@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // 36
+
+    // [] array
+    // {} object
+
+     let person = ['asdsad', 'ewffwe','weffase']; // array
+     console.log(person); // alphabatic output
+     // document.write(person);
+
+     let person1 = {
+        firstname:'asdsad',
+        lastname:'ewffwe',
+        city:'weffase'
+     };
+    person1.firstname = 'Anuradha'; // change property
+
+    console.log(person1.firstname);// object
+    console.log(person1.lastname);
+// add ===== delete=====
+    person1.email = "abc@gmail.com" // property add 
+    person1.age = 40 // add property
+    person1.height = 5.6 // add property
+
+    delete person1.city; // delete property
+    console.log(person1);
+
+// ======check property====
+    console.log(person1.country); // check property
+    // property check in true or flase
+    console.log('country' in person1); // false
+    console.log('age' in person1); // true
+
+    console.log(person1.country); // undefine
+
+// ======= all property show
+    for(let key in person1){
+        // console.log(key);    // only show keys
+        console.log(key +  " : " + person1[key])
+    };
+// ============ define array
+    person1.hobby = ['music',' reading',' dance'] // add property like array
+    console.log(person1); // all property show
+    console.log(person1.hobby); // only show hobby
+    console.log(person1.hobby[2]); // show index value
+
+// ============ define object
+    person1.living = {
+        'salary' : 10000,
+        'salary2' : 30000
+    };
+    console.log(person1);
+    console.log(person1.living);
+    console.log(person1.living.salary2);
+// ========== function declare in object
+person1.selery2 = function(){
+    return 50000;
+};
+console.log(person1);
+console.log(person1.selery2()); // add () for value
+
+// =====
+    let person3 = {
+        first_name : "Ananya",
+        last_name  : "Rao",
+        age  : 32,
+        full_name : function(){
+            return this.first_name + " " + this.last_name;
+        }
+    };
+    // call function full_name()
+    console.log(person3.full_name());
+    // add this full_name() because of function
+
+// ======
+
+
+
+    // document.write("<br>","<hr>",person1);
+    // document.write("<br>","<hr>",person1.firstname);
+
+
+    </script>
+</body>
+</html>

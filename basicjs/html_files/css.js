@@ -1,0 +1,1 @@
+document.write("my new 2nd js document");

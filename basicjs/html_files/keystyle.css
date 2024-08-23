@@ -1,0 +1,35 @@
+body{
+    font-family: arial;
+    background-color: aqua;
+    background-size: 600%;
+    background-position: center;
+   
+}
+#form{
+    width:800px;
+    height: 1000px;
+    margin: 200px auto;
+    border: 5px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgb(83, 81, 79);
+    color:#e0cdcd;
+    box-shadow: 10px 2px 15px #949393;
+}
+p,input{
+    font-size: 20px;
+    padding:5px;
+
+}
+p,h1{
+    font-size: 50px;
+    color :rgb(255, 234, 0);
+}
+input{
+    font-size: 50px;
+    border:1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: inset -2px 2px 10px #000;
+}

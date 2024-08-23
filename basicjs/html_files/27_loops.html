@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop</title>
+    
+</head>
+<body>
+<script type="text/javascript">
+// 32 
+// for loop
+
+// variable define inside of for
+for(let i = 1; i<=5; i++){
+    document.write(i + '<br>');
+}
+document.write("<br>","Done");
+// 2
+for(let a = 10; a<=5; a++){
+    document.write(a + '<br>');
+}
+document.write("<hr>","Done","<br>","<hr>");
+// 3
+for(let b = 4; b<=5; b++){
+    document.write(b + '<br>');
+}
+document.write("<br>","Done","<hr>");
+// ====================
+
+// while loop
+
+// variable define outside 
+let s = 1;
+while(s<=5){
+    document.write(s + "<br>");
+    // infinite time run
+    // console.log(s);
+    s++;
+ }
+ document.write("<br>","Done","<hr>");
+ // ===============
+ // do while loop
+ // variable define outside 
+ // always run one time
+let k = 1;
+do{
+    document.write(k + "<br>");// first statement
+    k++;
+}while(k<=5);// after condition
+document.write("<br>","Do While loop : Done","<hr>");
+// 2
+let l = 10;
+do{
+    document.write(l + "<br>");// first statement
+    l++;
+}while(l<=5);// after condition
+document.write("<br>","Do While loop : Done","<hr>");
+
+// for or if condition odd/even number
+
+for(let w = 1; w <=10; w++){
+    if(w % 2 === 0)
+    document.write(w + "<br>");
+}
+document.write("<br>","Even number","<hr>");
+// odd number
+for(let v = 1; v <=10; v++){
+    if(v % 2 != 0)
+    document.write(v + "<br>");
+}
+document.write("<br>","Odd number","<hr>");
+
+// do while loop or if condition odd/even number
+{
+    let password;
+    do{
+        password = prompt('Enter Password ? ');
+    }while(password !== "sonu p");
+}
+</script> 
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Method</title>
+</head>
+<body>
+    <script type="text/javascript">
+    // 38
+    // in new date n small and d capitel
+    // new Date() ==> system date,time,day
+    let d = new Date(); 
+    
+    document.write(d,"<br><br>"); // Thu Aug 22 2024 10:00:43 GMT+0530 (India Standard Time)
+   
+    document.write(d.toDateString(),"<br><br>"); // Thu Aug 22 2024
+    
+    document.write(d.getFullYear(),"<br><br>"); // 2024
+
+    document.write(d.getMonth(),"<br><br>"); // 7
+
+    document.write(d.getDate(),"<br><br>"); // 22
+
+    document.write(d.getHours(),"<br><br>"); //10
+
+    document.write(d.getMinutes(),"<br><br>"); // 9
+
+    document.write(d.setSeconds(),"<br><br>"); // 9
+
+    document.write(d.getMilliseconds(),"<br><br>"); // nan
+
+    document.write(d.getTime(),"<br><br>");// nan
+
+    document.write(d.getDay(),"<br><br>"); // nan
+
+    let t = new Date('january 20 2024'); // own date set
+    document.write(t);
+
+    // with set 
+    let a = new Date();
+        a.setFullYear(2023);
+    document.write("<hr><br>","Date With Set","<br><br>")
+
+        a.setDate(10);
+    document.write("<hr>",a,"<br><br>");
+
+        a.setHours(5);
+    document.write(a,"<br><br>");
+
+        a.setMilliseconds(50);
+    document.write(a,"<br><br>");
+
+        a.setUTCHours(20);
+    document.write(a,"<br><br>");
+
+        a.setUTCFullYear(2012);
+    document.write(a,"<br><br>");
+
+        a.setUTCDate(5);
+    document.write(a,"<br><br>");
+
+        a.setTime(9);
+    document.write(a,"<br><br>");
+
+        a.setSeconds(40);
+    document.write(a,"<br><br>");
+
+    </script>
+</body>
+</html>

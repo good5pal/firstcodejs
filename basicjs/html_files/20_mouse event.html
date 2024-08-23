@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style type="text/css">
+        #box{
+            width: 300px;
+            height: 300px;
+            background-color: burlywood;
+            margin:50px 0 0 12px;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id = "box" onmouseout="fun()"></div> 
+
+    <script type="text/javascript">
+        // 26 
+    // mouse event 7 : click, double click, right click, mouse over, mouse out, mouse down, mouse up
+
+    //  === change here ===
+    //==== <div id = "box" onclick="fun()"> change here
+    // ====================
+    
+    // onclick="fun()" == onclick/left click
+    // oncontextmenu="fun()"  == rightclick
+    // ondblclick="fun()"  == doubleclick
+    // onmousedown="fun()"  == onclick/mouseclick
+    // onmouseup="fun()"  == mouseup click
+    // onmouseover="fun()" == mouse over
+    // onmouseout="fun()"  == mouse out
+
+    //======
+        function fun(){
+            alert("Event activated.");
+        }
+    </script>
+</body>
+</html>

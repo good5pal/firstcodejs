@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        // 22
+        // no use space in function name
+        // without parameter
+        function myintro(){
+            document.write("Hello, this is my new function.<br><hr>");
+            document.write("my new first paragraph.<br>");
+            document.write("my new second paragraph.<hr>");
+        };
+        myintro();
+
+    // 23 
+    // function with parameter
+    // 1
+        function fullname(fname,lname){
+            document.write("1 Hello : " + fname + " " + lname);
+        }; // " " use for space
+        fullname("Anupama","Sharma<br><hr>");
+    // 2
+        // add name bydefault
+        function lastname(fname = "radhika",lname = "rai"){
+            document.write("2 Hello : " + fname + " " + lname,"<hr>");
+        }; // " " use for space
+        lastname();
+        // 3
+         // update name bydefault
+        function updatename(fname = "radhika",lname = "rai"){
+            document.write("3 Update name : " + fname + " " + lname);
+        }; // " " use for space
+        updatename("Anragh","Sharma<br><hr>");
+    
+        // 4
+        function updatename1(fname = "radhika",lname = "rai"){
+            document.write("Update name : " + fname + " " + lname);
+        }; // " " use for space
+        updatename1("Anragh","Sharma<br>");
+        updatename1("Anita","Sharma<br><hr>");
+
+    // 5
+        function sum(a,b){
+            document.write(a + b + "<br>");
+        }; // br for all breakline
+        sum(20,30);
+        sum(70,60);   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
