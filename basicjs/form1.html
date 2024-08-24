@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form event in Javascript.</title>
+</head>
+<body>
+    <!--in form (action="test.php) is write any location file path we want" -->
+    <form method="post" action="test.php" onreset="resetform()" onsubmit="return ValiDate()">
+        Username :<br><input type="text" onfocus="dosomeAction(this)" name="uname" id="uname"><br><br>
+
+        Email :<br><input type="text" onblur="doonBlur(this)"  name="email" id="email"><br><br>
+
+        Mobile :<br><input type="text" name="mobile" id="mobile" oninvalid="validateData(this) " required onselect="fireselectEvent(this)"><br><br>
+
+        Select State :<select id="State" onchange="getcities(this.value)">
+            <option value="">Select State</option>
+            <option value="aa">aa</option>
+            <option value="ss">ss</option>
+            <option value="dd">dd</option>
+            <option value="ff">ff</option>
+            <option value="vv">vv</option>  
+        </select>
+
+        <br><br>
+        <input type="search" onsearch="handlesearch()">
+        <input type="submit" value="save">
+        <input type="reset" value="reset"> 
+
+    </form>
+        <script type="text/Javascript">
+            function handlesearch() {
+                console.log('Wel come');
+            }
+            function getcities(val) {
+                alert(val);
+            }
+            function validateData() {
+                alert('Enter Mobile:');
+            }
+            function fireselectEvent(val) {
+                alert('Select event fired.');
+                console.log(val);
+            }
+            function validate() {
+                if(document.getElementById('uname').value.trim() == ''){
+                    alert('Enter Username:')
+                    return false;
+                }
+                if(document.getElementById('email').value.trim() == ''){
+                    alert('Enter Email:')
+                    return false;
+                }
+                
+            }
+            function resetform() {
+                alert('Clear The Form Data');
+            }
+            function dosomeAction(element){
+            console.log(element); 
+            }
+            function doonBlur(element){
+                console.log(element);
+            }
+        </script>
+</body>
+</html>
